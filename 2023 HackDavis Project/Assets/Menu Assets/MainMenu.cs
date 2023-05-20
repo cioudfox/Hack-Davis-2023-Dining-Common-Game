@@ -6,26 +6,32 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    public TextMeshProUGUI myLabel;
-    private int number;
+    //public TextMeshProUGUI myLabel;
+    //private int number;
+    //public Animator transition;
+
+    
     void Start()
     {
-        number = 0;
+        //number = 0;
         Debug.Log("In start");
     }
 
     public void LoadMenu ()
     {
+        //StartCoroutine(LoadLevel(0));
         SceneManager.LoadScene(0);
     }
 
     public void PlayGame ()
     {
+        //StartCoroutine(LoadLevel(1));
         SceneManager.LoadScene(1);
     }
 
     public void LoadAlmanac ()
     {
+        //StartCoroutine(LoadLevel(2));
         SceneManager.LoadScene(2);
     }
 
@@ -38,4 +44,14 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT GAME");
         Application.Quit();
     }
+/*
+    IEnumerator LoadLevel(int lvlindex)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(lvlindex);
+    }
+*/
 }
