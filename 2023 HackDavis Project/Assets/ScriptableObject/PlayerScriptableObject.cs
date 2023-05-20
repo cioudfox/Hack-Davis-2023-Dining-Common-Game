@@ -4,19 +4,19 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerScriptableObject", menuName = "ScriptableObjects/Player")]
 
-public class PlayerScriptableObject : MonoBehaviour
+public class PlayerScriptableObject : ScriptableObject
 {
     [SerializeField] GameObject prefab;
     public GameObject Prefab { get => prefab; private set => prefab = value; }
     [SerializeField] float damage;
-    public GameObject Damage { get => damage; private set => damage = value; }
+    public float Damage { get => damage; private set => damage = value; }
     [SerializeField] float speed;
-    public GameObject Speed { get => speed; private set => speed = value; }
+    public float Speed { get => speed; private set => speed = value; }
     [SerializeField] float maxHp;    
-    public GameObject MaxHp { get => maxHp; private set => maxHp = value; }
+    public float MaxHp { get => maxHp; private set => maxHp = value; }
 
     [SerializeField] float coolDownDuration;    
-    public GameObject coolDownDuration { get => coolDownDuration; private set => coolDownDuration = value; }
+    public float CoolDownDuration { get => coolDownDuration; private set => coolDownDuration = value; }
 
 
 }
