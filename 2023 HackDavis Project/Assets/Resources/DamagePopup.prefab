@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7497853580083363895}
   - component: {fileID: 7497853580083363894}
   - component: {fileID: -2236880182721146802}
+  - component: {fileID: 7191871298973935000}
   m_Layer: 0
   m_Name: DamagePopup
   m_TagString: Untagged
@@ -78,7 +79,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1962019153
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7497853580083363894
@@ -185,4 +186,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d41b3185af36648ba3057418f1d1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePopup: {fileID: 0}
+--- !u!210 &7191871298973935000
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497853580083363893}
+  m_Enabled: 1
+  m_SortingLayerID: 296877995
+  m_SortingLayer: 3
+  m_SortingOrder: 0

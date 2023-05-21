@@ -125,11 +125,11 @@ public class PlayerController : MonoBehaviour
     {
         if (moveDir.x > 0.0f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (moveDir.x < 0.0f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         body.velocity = new Vector2(moveDir.x * playerStat.currentMovespeed, moveDir.y * playerStat.currentMovespeed);    //Apply velocity
