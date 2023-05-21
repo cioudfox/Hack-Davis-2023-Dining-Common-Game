@@ -58,6 +58,11 @@ MonoBehaviour:
     spawnInterval: 0.5
   - time: 10
     enemyToSpawn:
+    - {fileID: 8850007371414600562, guid: 39501255d2cba164cb0b77baaeb1f568, type: 3}
+    count: 1
+    spawnInterval: 0.2
+  - time: 10
+    enemyToSpawn:
     - {fileID: 8568180555809642908, guid: 26065df31e9e54d4ab16697aaad29b7b, type: 3}
     - {fileID: 5729511549430290933, guid: 19350106438186c4ca270056f0e56a3c, type: 3}
     - {fileID: 7289987134433117795, guid: b0d39c427f126f142a184da59e88226f, type: 3}
@@ -79,4 +84,4 @@ MonoBehaviour:
     - {fileID: 7318365461752158251, guid: b3fc6ae15bef0534aaf54b2f0f4fd323, type: 3}
     - {fileID: 220125543439234588, guid: 59f597dd20b2ffd4eb33f0c2a2aa7e40, type: 3}
     count: 100000000
-    spawnInterval: 0.2
+    spawnInterval: 0.5
