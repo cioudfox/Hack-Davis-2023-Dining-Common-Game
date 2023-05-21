@@ -64,20 +64,32 @@ public class InventoryController : MonoBehaviour
                 TextMeshProUGUI infoDisplay = description.GetComponent<TextMeshProUGUI>();
                 switch (item.itemType)
                 {
-                    case Item.ItemType.Gem:
-                        infoDisplay.SetText("It is a gem.");
+                    case Item.ItemType.Sushi:
+                        infoDisplay.SetText("");
                         break;
-                    case Item.ItemType.Mushroom:
-                        infoDisplay.SetText("It is a mushroom.");
+                    case Item.ItemType.Veges:
+                        infoDisplay.SetText("");
                         break;
-                    case Item.ItemType.Heart:
-                        infoDisplay.SetText("Heart: Restore health.");
+                    case Item.ItemType.Meat:
+                        infoDisplay.SetText("");
                         break;
-                    case Item.ItemType.CriticalSurge:
-                        infoDisplay.SetText("CriticalSurge: Increase critical hit chance.");
+                    case Item.ItemType.Apple:
+                        infoDisplay.SetText("");
                         break;
-                    case Item.ItemType.Swift:
-                        infoDisplay.SetText("Swift: Increase speed.");
+                    case Item.ItemType.Blueberry:
+                        infoDisplay.SetText("");
+                        break;
+                    case Item.ItemType.Kiwi:
+                        infoDisplay.SetText("");
+                        break;
+                    case Item.ItemType.Strawberry:
+                        infoDisplay.SetText("");
+                        break;
+                    case Item.ItemType.Orange:
+                        infoDisplay.SetText("");
+                        break;
+                    case Item.ItemType.Watermelon:
+                        infoDisplay.SetText("");
                         break;
                 }
             }
@@ -95,7 +107,7 @@ public class InventoryController : MonoBehaviour
 
             slotRectTransform.GetComponent<ButtonUI>().onRightClick.AddListener( () => {
                 // use the item
-                if (item.itemType == Item.ItemType.Heart || item.itemType == Item.ItemType.CriticalSurge || item.itemType == Item.ItemType.Swift)
+                if (item.itemType == Item.ItemType.Sushi || item.itemType == Item.ItemType.Veges || item.itemType == Item.ItemType.Meat)
                 {
                     inventory.UseItem(item);
                 }
@@ -108,7 +120,7 @@ public class InventoryController : MonoBehaviour
 
 
 
-            if (item.itemType == Item.ItemType.Heart || item.itemType == Item.ItemType.CriticalSurge || item.itemType == Item.ItemType.Swift)
+            if (item.itemType == Item.ItemType.Sushi || item.itemType == Item.ItemType.Veges || item.itemType == Item.ItemType.Meat)
             {
                 slotRectTransform.anchoredPosition = new Vector2(consumableRowX * slotCellSize, -consumableRowY * slotCellSize);
 
@@ -120,7 +132,7 @@ public class InventoryController : MonoBehaviour
                 uiText.SetText(item.amount.ToString());
 
                 consumableRowX++;
-                if (consumableRowX >= 4) 
+                if (consumableRowX >= 3) 
                 { 
                     consumableRowX = 0;
                     consumableRowY++;
@@ -138,7 +150,7 @@ public class InventoryController : MonoBehaviour
                 uiText.SetText(item.amount.ToString());
 
                 treaRowX++;
-                if (treaRowX >= 4) 
+                if (treaRowX >= 3) 
                 { 
                     treaRowX = 0;
                     treaRowY++;

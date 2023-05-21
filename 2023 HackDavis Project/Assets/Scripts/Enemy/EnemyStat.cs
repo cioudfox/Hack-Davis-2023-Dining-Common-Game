@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class EnemyStat : MonoBehaviour
 {
-    [SerializeField] public GameObject gemPrefab;
-    [SerializeField] public GameObject mushroomPrefab;
-    [SerializeField] public GameObject heartPrefab;
+    [SerializeField] public GameObject sushiPrefab;
+    [SerializeField] public GameObject vegesPrefab;
+    [SerializeField] public GameObject meatPrefab;
 
-    [SerializeField] public GameObject criticalPrefab;
-    [SerializeField] public GameObject swiftPrefab;
+    [SerializeField] public GameObject applePrefab;
+    [SerializeField] public GameObject blueberryPrefab;
+    [SerializeField] public GameObject kiwiPrefab;
+
+    [SerializeField] public GameObject orangePrefab;
+
+    [SerializeField] public GameObject strawberryPrefab;
+
+    [SerializeField] public GameObject watermelonPrefab;
+
 
     public EnemyScriptableObject enemyData;
 
@@ -77,26 +85,40 @@ public class EnemyStat : MonoBehaviour
     {
         Destroy(gameObject);
 
-        float gemChance = Random.value;
-        float mushroomChance = Random.value;
-        float heartChance = Random.value;
-        float criticalChance = Random.value;
-        float swiftChance = Random.value;
+        float sushiChance = Random.value;
+        float vegesChance = Random.value;
+        float meatChance = Random.value;
 
-        if (gemChance < 0.6f) 
-            Instantiate(gemPrefab, transform.position, Quaternion.identity);
+        float fruitChance1 = Random.value;
+        float fruitChance2 = Random.value;
+        float fruitChance3 = Random.value;
+        float fruitChance4 = Random.value;
+        float fruitChance5 = Random.value;
+        float fruitChance6 = Random.value;
 
-        if (mushroomChance < 0.4f) 
-            Instantiate(mushroomPrefab, transform.position, Quaternion.identity);
 
-        if (heartChance < 0.3f) 
-            Instantiate(heartPrefab, transform.position, Quaternion.identity);
+        if (fruitChance1 < 0.6f) 
+            Instantiate(applePrefab, transform.position, Quaternion.identity);
+        if (fruitChance2 < 0.6f) 
+            Instantiate(blueberryPrefab, transform.position, Quaternion.identity);
+        if (fruitChance3 < 0.6f) 
+            Instantiate(kiwiPrefab, transform.position, Quaternion.identity);
+        if (fruitChance4 < 0.6f) 
+            Instantiate(orangePrefab, transform.position, Quaternion.identity);
+        if (fruitChance5 < 0.6f) 
+            Instantiate(strawberryPrefab, transform.position, Quaternion.identity);
+        if (fruitChance6 < 0.6f) 
+            Instantiate(watermelonPrefab, transform.position, Quaternion.identity);
 
-        if (criticalChance < 0.25f) 
-            Instantiate(criticalPrefab, transform.position, Quaternion.identity);
 
-        if (swiftChance < 0.2f) 
-            Instantiate(swiftPrefab, transform.position, Quaternion.identity);
+        if (sushiChance < 0.3f) 
+            Instantiate(sushiPrefab, transform.position, Quaternion.identity);
+
+        if (vegesChance < 0.25f) 
+            Instantiate(vegesPrefab, transform.position, Quaternion.identity);
+
+        if (meatChance < 0.2f) 
+            Instantiate(meatPrefab, transform.position, Quaternion.identity);
 
     }
     private void OnCollisionStay2D(Collision2D collision2D)
