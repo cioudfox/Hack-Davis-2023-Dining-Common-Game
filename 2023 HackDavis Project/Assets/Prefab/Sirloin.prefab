@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 916709140405144750}
   - component: {fileID: 6426423628471608054}
   - component: {fileID: 412331275119239097}
-  - component: {fileID: 816540035476895197}
   - component: {fileID: 306410685920690116}
-  - component: {fileID: 2445063752394547728}
   - component: {fileID: 203442898096393015}
   - component: {fileID: -1166065298813513093}
+  - component: {fileID: -5072987699151874941}
   m_Layer: 8
   m_Name: Sirloin
   m_TagString: Enemy
@@ -31,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386471261550691450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4996102, y: -7.9415846, z: 0}
+  m_LocalPosition: {x: 2.51, y: -2.87, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111,39 +110,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &816540035476895197
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386471261550691450}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 0.5, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.13645184, y: 0.21905279}
-      - {x: 0.00048685074, y: 0.22000647}
-      - {x: -0.2529993, y: -0.0442214}
-      - {x: -0.2529993, y: -0.16926098}
-      - {x: -0.1317681, y: -0.25}
-      - {x: -0.003729701, y: -0.25}
-      - {x: 0.221506, y: -0.072024345}
-      - {x: 0.22150612, y: 0.13002539}
 --- !u!50 &306410685920690116
 Rigidbody2D:
   serializedVersion: 4
@@ -165,25 +131,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!254 &2445063752394547728
-RelativeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386471261550691450}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_MaxForce: 10000
-  m_MaxTorque: 10000
-  m_CorrectionScale: 0.3
-  m_AutoConfigureOffset: 1
-  m_LinearOffset: {x: 1.4996102, y: 7.9415846}
-  m_AngularOffset: 0
 --- !u!114 &203442898096393015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +159,19 @@ MonoBehaviour:
   fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
   enemyData: {fileID: 11400000, guid: 9cb3aede46d01be4db40f845fc2cf45a, type: 2}
   despawnDistance: 20
+--- !u!70 &-5072987699151874941
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386471261550691450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 0.5}
+  m_Direction: 0

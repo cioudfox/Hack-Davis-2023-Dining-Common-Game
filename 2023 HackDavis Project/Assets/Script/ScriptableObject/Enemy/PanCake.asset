@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PanCake
   m_EditorClassIdentifier: 
   prefab: {fileID: 220125543439234588, guid: 59f597dd20b2ffd4eb33f0c2a2aa7e40, type: 3}
-  damage: 0
-  speed: 0
-  maxHp: 0
+  damage: 6
+  speed: 2
+  maxHp: 30
   defence: 0
