@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffb587eef79a1746b83de8f8351f328, type: 3}
+  m_Name: FruitScriptableObject
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 8726295988651649588, guid: a5cc455835442ef4593146f2fa2a855a, type: 3}
+  blueberryPrefab: {fileID: 8726295988651649588, guid: bcb0cc2117d518c4c82e961898ffefa0, type: 3}
+  kiwiPrefab: {fileID: 8726295988651649588, guid: f5ac2df1f99e5464e837a6f68a94075a, type: 3}
+  meatPrefab: {fileID: 8726295988651649588, guid: 3cd1b7f062e058b45856e379743ff178, type: 3}
+  orangePrefab: {fileID: 8726295988651649588, guid: 1fbada381835a3547bd3cc47a174236d, type: 3}
+  strawberryPrefab: {fileID: 8726295988651649588, guid: a9772b243381c0d49bd52e6cd0ee7bc0, type: 3}
+  sushiPrefab: {fileID: 8726295988651649588, guid: fd50e57aa90078e42b366c1150a12fee, type: 3}
+  vegesPrefab: {fileID: 8726295988651649588, guid: 988056661347a2949ac147367ed2bd70, type: 3}
+  watermelonPrefab: {fileID: 8726295988651649588, guid: 9477eca7df85a514db206b55c4e3c5fc, type: 3}

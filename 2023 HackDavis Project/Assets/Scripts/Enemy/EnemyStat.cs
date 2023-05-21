@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class EnemyStat : MonoBehaviour
 {
-    [SerializeField] public GameObject sushiPrefab;
-    [SerializeField] public GameObject vegesPrefab;
-    [SerializeField] public GameObject meatPrefab;
+    // [SerializeField] public GameObject sushiPrefab;
+    // [SerializeField] public GameObject vegesPrefab;
+    // [SerializeField] public GameObject meatPrefab;
 
-    [SerializeField] public GameObject applePrefab;
-    [SerializeField] public GameObject blueberryPrefab;
-    [SerializeField] public GameObject kiwiPrefab;
+    // [SerializeField] public GameObject applePrefab;
+    // [SerializeField] public GameObject blueberryPrefab;
+    // [SerializeField] public GameObject kiwiPrefab;
 
-    [SerializeField] public GameObject orangePrefab;
+    // [SerializeField] public GameObject orangePrefab;
 
-    [SerializeField] public GameObject strawberryPrefab;
+    // [SerializeField] public GameObject strawberryPrefab;
 
-    [SerializeField] public GameObject watermelonPrefab;
+    // [SerializeField] public GameObject watermelonPrefab;
 
 
+    public FruitScriptableObject fruitData;
     public EnemyScriptableObject enemyData;
 
     float currentDamage;
@@ -84,7 +85,7 @@ public class EnemyStat : MonoBehaviour
     public void Kill()
     {
         Destroy(gameObject);
-
+        Debug.Log(fruitData.applePrefab);
         float sushiChance = Random.value;
         float vegesChance = Random.value;
         float meatChance = Random.value;
@@ -98,27 +99,27 @@ public class EnemyStat : MonoBehaviour
 
 
         if (fruitChance1 < 0.6f) 
-            Instantiate(applePrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.applePrefab, transform.position, Quaternion.identity);
         if (fruitChance2 < 0.6f) 
-            Instantiate(blueberryPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.blueberryPrefab, transform.position, Quaternion.identity);
         if (fruitChance3 < 0.6f) 
-            Instantiate(kiwiPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.kiwiPrefab, transform.position, Quaternion.identity);
         if (fruitChance4 < 0.6f) 
-            Instantiate(orangePrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.orangePrefab, transform.position, Quaternion.identity);
         if (fruitChance5 < 0.6f) 
-            Instantiate(strawberryPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.strawberryPrefab, transform.position, Quaternion.identity);
         if (fruitChance6 < 0.6f) 
-            Instantiate(watermelonPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.watermelonPrefab, transform.position, Quaternion.identity);
 
 
         if (sushiChance < 0.3f) 
-            Instantiate(sushiPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.sushiPrefab, transform.position, Quaternion.identity);
 
         if (vegesChance < 0.25f) 
-            Instantiate(vegesPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.vegesPrefab, transform.position, Quaternion.identity);
 
         if (meatChance < 0.2f) 
-            Instantiate(meatPrefab, transform.position, Quaternion.identity);
+            Instantiate(fruitData.meatPrefab, transform.position, Quaternion.identity);
 
     }
     private void OnCollisionStay2D(Collision2D collision2D)
