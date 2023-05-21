@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7277675879386857381}
   - component: {fileID: 5410464198350486789}
   - component: {fileID: -324040459885070527}
+  - component: {fileID: 2020982909729974332}
   m_Layer: 0
   m_Name: Sausage
   m_TagString: Untagged
@@ -161,3 +162,16 @@ PolygonCollider2D:
       - {x: 0.04725969, y: -0.2470007}
       - {x: 0.25899816, y: -0.01876545}
       - {x: 0.25, y: 0.25}
+--- !u!114 &2020982909729974332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064877211383215059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102c52c0d1bef5d41840b61c3328fa4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: e3fb3c18c83254c43932051a3cad6700, type: 2}

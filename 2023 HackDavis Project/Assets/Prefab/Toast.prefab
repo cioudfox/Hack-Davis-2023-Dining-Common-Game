@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5076924499086122547}
   - component: {fileID: 3748222604351359826}
   - component: {fileID: 6257748747896094209}
+  - component: {fileID: -2230571777984922012}
   m_Layer: 0
   m_Name: Toast
   m_TagString: Untagged
@@ -155,3 +156,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2230571777984922012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751191515807700974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102c52c0d1bef5d41840b61c3328fa4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 8cbab02502e479a429892d0d9c067d8e, type: 2}
