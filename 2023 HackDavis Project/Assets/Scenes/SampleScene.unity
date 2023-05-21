@@ -5366,11 +5366,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fbf4e04f8fa97408b3735c581baea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gemSprite: {fileID: 21300000, guid: e39e089a4e9b9b047abbd4593d393680, type: 3}
-  mushroomSprite: {fileID: 21300000, guid: 521f111126a7aa04c87206596cee7b5f, type: 3}
-  heartSprite: {fileID: 21300000, guid: fd03deee6d5feae4aa95a1285f675012, type: 3}
-  critSprite: {fileID: 21300000, guid: dd02a6e2f5bf6004fbd7b6c13e3e45a6, type: 3}
-  swiftSprite: {fileID: 21300000, guid: 176e07a5c9b756b4dace2ddbfbf020cf, type: 3}
+  sushiSprite: {fileID: 21300000, guid: cb401f9b49f8f3546aa557c1dda8721e, type: 3}
+  vegesSprite: {fileID: 21300000, guid: 4de9882ff858e91428ba13c817bdd560, type: 3}
+  meatSprite: {fileID: 21300000, guid: 117a07216ec67904585e8aa788856e54, type: 3}
+  appleSprite: {fileID: 21300000, guid: beec5c1e2fc232641a5643c8896fb7c5, type: 3}
+  blueberrySprite: {fileID: 21300000, guid: 70e5f88a9178dc741894b25988e6f6de, type: 3}
+  kiwiSprite: {fileID: 21300000, guid: 81d5c9ad99b22c748a42090f1ebcc121, type: 3}
+  orangeSprite: {fileID: 21300000, guid: f1bf23b1bf76e7b4aa44534b39c56194, type: 3}
+  strawberrySprite: {fileID: 21300000, guid: ac46a7965e5b47443918a35fecaee3ca, type: 3}
+  watermelonSprite: {fileID: 21300000, guid: 083ab10aeb1723e43a25fbc55c05de47, type: 3}
 --- !u!4 &1409625465
 Transform:
   m_ObjectHideFlags: 0

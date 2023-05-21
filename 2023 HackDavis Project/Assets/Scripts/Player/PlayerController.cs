@@ -142,29 +142,49 @@ public class PlayerController : MonoBehaviour
             collectible.Collect();
         }
         
-        if (collision.gameObject.tag == "Gem") 
+        if (collision.gameObject.tag == "Sushi") 
         {
-            this.inventory.AddItem(new Item {itemType = Item.ItemType.Gem, amount = 1});
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Sushi, amount = 1});
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Mushroom")
+        if (collision.gameObject.tag == "Veges")
         {
-            this.inventory.AddItem(new Item {itemType = Item.ItemType.Mushroom, amount = 1});
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Veges, amount = 1});
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Heart")
+        if (collision.gameObject.tag == "Meat")
         {
-            this.inventory.AddItem(new Item {itemType = Item.ItemType.Heart, amount = 1});
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Meat, amount = 1});
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "CriticalSurge")
+        if (collision.gameObject.tag == "Apple")
         {
-            this.inventory.AddItem(new Item {itemType = Item.ItemType.CriticalSurge, amount = 1});
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Apple, amount = 1});
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Swift")
+        if (collision.gameObject.tag == "Blueberry")
         {
-            this.inventory.AddItem(new Item {itemType = Item.ItemType.Swift, amount = 1});
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Blueberry, amount = 1});
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Kiwi")
+        {
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Kiwi, amount = 1});
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Orange")
+        {
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Orange, amount = 1});
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Strawberry")
+        {
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Strawberry, amount = 1});
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Watermelon")
+        {
+            this.inventory.AddItem(new Item {itemType = Item.ItemType.Watermelon, amount = 1});
             Destroy(collision.gameObject);
         }
     }
@@ -175,21 +195,21 @@ public class PlayerController : MonoBehaviour
         {
             switch (item.itemType)
             {
-                case Item.ItemType.Heart:
-                    Debug.Log("use a Heart");
-                    inventory.RemoveItem(new Item {itemType = Item.ItemType.Heart, amount = 1});
+                case Item.ItemType.Sushi:
+                    Debug.Log("use a Sushi");
+                    inventory.RemoveItem(new Item {itemType = Item.ItemType.Sushi, amount = 1});
                     StartCoroutine(FlashObject(this.gameObject, 0.5f, Color.green));
                     playerStat.RestoreHealth(15.0f);
                     break;
-                case Item.ItemType.CriticalSurge:
-                    Debug.Log("use a CriticalSurge");
-                    inventory.RemoveItem(new Item {itemType = Item.ItemType.CriticalSurge, amount = 1});
+                case Item.ItemType.Veges:
+                    Debug.Log("use a Veges");
+                    inventory.RemoveItem(new Item {itemType = Item.ItemType.Veges, amount = 1});
                     StartCoroutine(FlashObject(this.gameObject, 0.5f, Color.yellow));
                     playerStat.BoostCrit(3.0f);
                     break;
-                case Item.ItemType.Swift:
-                    Debug.Log("use a Swift");
-                    inventory.RemoveItem(new Item {itemType = Item.ItemType.Swift, amount = 1});
+                case Item.ItemType.Meat:
+                    Debug.Log("use a Meat");
+                    inventory.RemoveItem(new Item {itemType = Item.ItemType.Meat, amount = 1});
                     playerStat.BoostSpeed(1.5f);
                     
                     // this.gameObject.GetComponentInChildren<testWeaponController>().weaponData.CooldownDuration = 0.1f;

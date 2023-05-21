@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1962019153
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2106673618, guid: bd82cfca198fd4c4b9a1adefba362190, type: 3}
   m_Color: {r: 1, g: 0.3443396, b: 0.3443396, a: 1}
@@ -172,10 +172,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gemPrefab: {fileID: 7430569447165051818, guid: 77f21b64863ea054896155c22a08b88b, type: 3}
-  mushroomPrefab: {fileID: 3125093301620040353, guid: a1b364e9db186084faaf9de42d8a59e8, type: 3}
-  heartPrefab: {fileID: 8726295988651649588, guid: fd50e57aa90078e42b366c1150a12fee, type: 3}
-  criticalPrefab: {fileID: 4466612313801792375, guid: c12eabd3f8e43f743bfe24c2b93bfeee, type: 3}
-  swiftPrefab: {fileID: 8040398528883429238, guid: ce45456c0a0046140bb6f1a7305598f1, type: 3}
+  sushiPrefab: {fileID: 8726295988651649588, guid: fd50e57aa90078e42b366c1150a12fee, type: 3}
+  vegesPrefab: {fileID: 8726295988651649588, guid: 988056661347a2949ac147367ed2bd70, type: 3}
+  meatPrefab: {fileID: 8726295988651649588, guid: 3cd1b7f062e058b45856e379743ff178, type: 3}
+  applePrefab: {fileID: 8726295988651649588, guid: a5cc455835442ef4593146f2fa2a855a, type: 3}
+  blueberryPrefab: {fileID: 8726295988651649588, guid: bcb0cc2117d518c4c82e961898ffefa0, type: 3}
+  kiwiPrefab: {fileID: 8726295988651649588, guid: f5ac2df1f99e5464e837a6f68a94075a, type: 3}
+  orangePrefab: {fileID: 8726295988651649588, guid: 1fbada381835a3547bd3cc47a174236d, type: 3}
+  strawberryPrefab: {fileID: 8726295988651649588, guid: a9772b243381c0d49bd52e6cd0ee7bc0, type: 3}
+  watermelonPrefab: {fileID: 8726295988651649588, guid: 9477eca7df85a514db206b55c4e3c5fc, type: 3}
   enemyData: {fileID: 11400000, guid: 506ea6a28d499764285a414b7f507c16, type: 2}
   despawnDistance: 20
