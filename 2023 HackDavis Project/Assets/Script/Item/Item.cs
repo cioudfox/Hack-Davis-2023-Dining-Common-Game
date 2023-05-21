@@ -6,11 +6,15 @@ public class Item
 {
     public enum ItemType 
     {
-        Gem,
-        Mushroom,
-        Heart,
-        CriticalSurge,
-        Swift
+        Sushi,
+        Veges,
+        Meat,
+        Apple,
+        Blueberry,
+        Kiwi,
+        Orange,
+        Strawberry,
+        Watermelon
     }
 
     public ItemType itemType;
@@ -20,16 +24,24 @@ public class Item
     {
         switch (itemType)
         {
-            case ItemType.Gem:
-                return ItemAssets.Instance.gemSprite;
-            case ItemType.Mushroom:
-                return ItemAssets.Instance.mushroomSprite;
-            case ItemType.Heart:
-                return ItemAssets.Instance.heartSprite;
-            case ItemType.CriticalSurge:
-                return ItemAssets.Instance.critSprite;
-            case ItemType.Swift:
-                return ItemAssets.Instance.swiftSprite;
+            case ItemType.Sushi:
+                return ItemAssets.Instance.sushiSprite;
+            case ItemType.Veges:
+                return ItemAssets.Instance.vegesSprite;
+            case ItemType.Meat:
+                return ItemAssets.Instance.meatSprite;
+            case ItemType.Apple:
+                return ItemAssets.Instance.appleSprite;
+            case ItemType.Blueberry:
+                return ItemAssets.Instance.blueberrySprite;
+            case ItemType.Kiwi:
+                return ItemAssets.Instance.kiwiSprite;
+            case ItemType.Orange:
+                return ItemAssets.Instance.orangeSprite;
+            case ItemType.Strawberry:
+                return ItemAssets.Instance.strawberrySprite;
+            case ItemType.Watermelon:
+                return ItemAssets.Instance.watermelonSprite;
             default:
                 Debug.Log("Invalid Item Type.");
                 return null;
