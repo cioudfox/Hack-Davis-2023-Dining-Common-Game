@@ -14,18 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageEvents:
   - time: 5
-    enemyToSpawn: {fileID: 897527639298260085, guid: dba29f90af555f44a84b0c922fd80def, type: 3}
-    count: 3
+    enemyToSpawn:
+    - {fileID: 8568180555809642908, guid: 26065df31e9e54d4ab16697aaad29b7b, type: 3}
+    - {fileID: 5729511549430290933, guid: 19350106438186c4ca270056f0e56a3c, type: 3}
+    - {fileID: 6093314083905489051, guid: 849f3e736ba026e4ea90bca6f719cd2a, type: 3}
+    count: 10
     spawnInterval: 0.1
   - time: 10
-    enemyToSpawn: {fileID: 7184298815397092472, guid: e0eba2b657223a14381317e6511239f9, type: 3}
-    count: 5
-    spawnInterval: 2
-  - time: 20
-    enemyToSpawn: {fileID: 897527639298260085, guid: baefac060e87038498d4ed0b5cb918f8, type: 3}
-    count: 10
-    spawnInterval: 1
-  - time: 20
-    enemyToSpawn: {fileID: 8392947708430205325, guid: bfbcf24e6c6255f4c8c342edda358cf8, type: 3}
-    count: 9999
-    spawnInterval: 2
+    enemyToSpawn:
+    - {fileID: 7289987134433117795, guid: b0d39c427f126f142a184da59e88226f, type: 3}
+    - {fileID: 1199844483004798018, guid: 1905e1f705786c5459f1cfa1e3af2734, type: 3}
+    - {fileID: 4741495306206606752, guid: 41ae98f696571234c9e7371d2d5a3e87, type: 3}
+    count: 20
+    spawnInterval: 0.5
+  - time: 10
+    enemyToSpawn:
+    - {fileID: 4186213746838021615, guid: c43cdb375074dbc47933960e3e3c943a, type: 3}
+    - {fileID: 6123647001160166239, guid: 5e7b4cda55e59944f9554b7622735ac4, type: 3}
+    - {fileID: 5202414047041516650, guid: e71bc01f3a685f944bec01957929e97a, type: 3}
+    count: 20
+    spawnInterval: 0.5
+  - time: 10
+    enemyToSpawn:
+    - {fileID: 6272060287521065658, guid: a26c5b862c8e75a4a9441a73d76781d2, type: 3}
+    - {fileID: 7318365461752158251, guid: b3fc6ae15bef0534aaf54b2f0f4fd323, type: 3}
+    - {fileID: 220125543439234588, guid: 59f597dd20b2ffd4eb33f0c2a2aa7e40, type: 3}
+    count: 20
+    spawnInterval: 0.5
+  - time: 10
+    enemyToSpawn:
+    - {fileID: 7975145348299274543, guid: 563d06e62585b80488d99dca141685b3, type: 3}
+    - {fileID: 4234897410906476284, guid: 29570ac91aa4bc94e9821ad6e78c579e, type: 3}
+    - {fileID: 8850007371414600562, guid: 5637996b78e43a94e96ea0eb09a33935, type: 3}
+    count: 20
+    spawnInterval: 0.5
+  - time: 10
+    enemyToSpawn:
+    - {fileID: 386471261550691450, guid: 26c8ba412dc9e944a88cd9d8d9608c34, type: 3}
+    - {fileID: 7687801628955998005, guid: 6346bfc6e3cdb9f4db55c7871b90dd1f, type: 3}
+    - {fileID: 4751191515807700974, guid: 353d17684d9703145a3ad531e608721b, type: 3}
+    - {fileID: 6064877211383215059, guid: 1dc7650ec0ea8ca47bbad921cfcb16c7, type: 3}
+    count: 20
+    spawnInterval: 0.5

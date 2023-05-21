@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 6953346459737164661}
   - component: {fileID: 1813421479588113670}
   - component: {fileID: 8227125063898831315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Burger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8568180555809642908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.681761, y: -8.657134, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 296877995
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -436122349, guid: f89b01f779b7d23499bce2bb03daf019, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

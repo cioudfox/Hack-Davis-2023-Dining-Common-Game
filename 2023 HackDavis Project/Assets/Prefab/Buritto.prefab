@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 6882557917484742560}
   - component: {fileID: 5275174223824468836}
   - component: {fileID: 8404683954804425462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Buritto
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5729511549430290933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -198.455, y: 210.904, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 296877995
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 765030130, guid: e1997a3ccca998645a1031979236df68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

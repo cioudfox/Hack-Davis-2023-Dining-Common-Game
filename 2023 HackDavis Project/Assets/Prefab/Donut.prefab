@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3829059312424336895}
   - component: {fileID: -8730573985975901906}
   - component: {fileID: 8302748907790259737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Donut
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4741495306206606752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.4603124, y: -9.217129, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 296877995
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1636619222, guid: 556b2288edfa0a9468c34605d87944d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

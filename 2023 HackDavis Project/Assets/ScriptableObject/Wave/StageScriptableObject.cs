@@ -7,7 +7,7 @@ using UnityEngine;
 public class StageEvent
 {
     public float time;
-    public GameObject enemyToSpawn;
+    public List<GameObject> enemyToSpawn;
     public int count;
 
     public float spawnInterval;
