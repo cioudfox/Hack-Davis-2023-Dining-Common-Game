@@ -233,4 +233,52 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(flashDuration);
         renderer.material.color = originalColor;
     }
+
+    public int GetScore()
+    {
+        Debug.Log("Called?");
+        int score = 0000;
+        var list = this.inventory.GetItemList();
+        // Item itemClass = GetComponent<Item>();
+        Debug.Log("Called2");
+
+        foreach (var item in list)
+        {
+            var type = item.itemType;
+
+            if (type == Item.ItemType.Apple)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Blueberry)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Kiwi)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Orange)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Strawberry)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Watermelon)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+        }
+        Debug.Log("Called?3");
+
+        return score;
+    }
 }
