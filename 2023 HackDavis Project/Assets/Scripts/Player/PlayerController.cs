@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
 
     PlayerStat playerStat;
 
+    Color playerOriginalColor;
+    float colorResetPeriod = 0.25f;
+    float colorRestTimer = 0.0f;
+
     public Vector2 GetLastMovedVector() 
     {
         return lastMovedVector;
@@ -58,6 +62,8 @@ public class PlayerController : MonoBehaviour
 
         this.inventory = new Inventory(UseItem);
         inventoryController.SetInventory(this.inventory);
+
+        playerOriginalColor = this.gameObject.GetComponent<Renderer>().material.color;
     }
 
     void Update()
@@ -65,6 +71,13 @@ public class PlayerController : MonoBehaviour
         InputManagement();
         Move();
         itemCooldownTimer -= Time.deltaTime;
+
+        colorRestTimer += Time.deltaTime;
+        if (colorRestTimer >= colorResetPeriod)
+        {
+            this.gameObject.GetComponent<Renderer>().material.color = playerOriginalColor;
+            colorRestTimer = 0.0f;
+        }
     }
 
     void InputManagement()
@@ -249,13 +262,13 @@ public class PlayerController : MonoBehaviour
                 case Item.ItemType.Sushi:
                     Debug.Log("use a Sushi");
                     inventory.RemoveItem(new Item {itemType = Item.ItemType.Sushi, amount = 1});
-                    StartCoroutine(FlashObject(this.gameObject, 0.5f, Color.green));
+                    StartCoroutine(FlashObject(this.gameObject, 0.25f, Color.green));
                     playerStat.RestoreHealth(15.0f);
                     break;
                 case Item.ItemType.Veges:
                     Debug.Log("use a Veges");
                     inventory.RemoveItem(new Item {itemType = Item.ItemType.Veges, amount = 1});
-                    StartCoroutine(FlashObject(this.gameObject, 0.5f, Color.yellow));
+                    StartCoroutine(FlashObject(this.gameObject, 0.25f, Color.yellow));
                     playerStat.BoostCrit(3.0f);
                     break;
                 case Item.ItemType.Meat:
@@ -265,7 +278,7 @@ public class PlayerController : MonoBehaviour
                     
                     // this.gameObject.GetComponentInChildren<testWeaponController>().weaponData.CooldownDuration = 0.1f;
 
-                    StartCoroutine(FlashObject(this.gameObject, 0.5f, Color.gray));
+                    StartCoroutine(FlashObject(this.gameObject, 0.25f, Color.gray));
                     break;
             }
             itemCooldownTimer = itemUsageCooldown;
