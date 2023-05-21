@@ -143,6 +143,7 @@ public class PlayerStat : MonoBehaviour
             {
                 Kill();
             }
+            StartCoroutine(PlayerController.FlashObject(this.gameObject, 0.25f, Color.red));
         }
     }
 
