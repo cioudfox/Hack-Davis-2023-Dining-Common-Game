@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D body;
     private Vector2 moveDir;
+    public Animator animator;
 
     void Start()
     {
@@ -25,13 +26,22 @@ public class PlayerController : MonoBehaviour
 
         moveDir = new Vector2(moveX, moveY).normalized;
 
+        if (moveDir.x != 0 || moveDir.y != 0)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+
         if (moveDir.x > 0.0f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (moveDir.x < 0.0f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         body.velocity = new Vector2(moveDir.x * 5.0f, moveDir.y * 5.0f);    //Apply velocity
