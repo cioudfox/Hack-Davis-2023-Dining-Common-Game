@@ -2980,7 +2980,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef7b7e33eb32b94e83a38165fe4d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 6093314083905489051, guid: 8cebde71541bf704ebfd8d9515b62f57, type: 3}
   spawnArea: {x: 5, y: 5}
+  spawnTime: 1
   player: {fileID: 715606548}
 --- !u!4 &677777579
 Transform:
@@ -3245,8 +3247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82153cc65e8a8b4da38e27d9b62f934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageData: {fileID: 11400000, guid: ad8f610ba70a1a748ae97a660717c7a0, type: 2}
-  enemySpawner: {fileID: 677777578}
+  stageData: {fileID: 0}
+  enemySpawner: {fileID: 0}
 --- !u!1 &1396085377
 GameObject:
   m_ObjectHideFlags: 0
