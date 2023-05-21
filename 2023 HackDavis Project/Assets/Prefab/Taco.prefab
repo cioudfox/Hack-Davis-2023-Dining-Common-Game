@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1149743859755811433}
   - component: {fileID: -1995877473699314935}
   - component: {fileID: -3065598644204839082}
+  - component: {fileID: 7978955962356637943}
+  - component: {fileID: 9038316376869894}
   m_Layer: 0
   m_Name: Taco
   m_TagString: Untagged
@@ -145,3 +147,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7978955962356637943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7687801628955998005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: e08b07546eeee6c47a46976797a0f1fb, type: 2}
+--- !u!114 &9038316376869894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7687801628955998005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: e08b07546eeee6c47a46976797a0f1fb, type: 2}
+  despawnDistance: 20

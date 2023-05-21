@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7788188109258595453}
   - component: {fileID: 5517487381137618336}
   - component: {fileID: 5066239319592363548}
+  - component: {fileID: 8645896121422625296}
+  - component: {fileID: -4236159022707578892}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -145,3 +147,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8645896121422625296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093314083905489051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 76c1da27def81254688f91915de992e2, type: 2}
+--- !u!114 &-4236159022707578892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093314083905489051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: 76c1da27def81254688f91915de992e2, type: 2}
+  despawnDistance: 20

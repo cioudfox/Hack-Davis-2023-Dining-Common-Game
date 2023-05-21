@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7277675879386857381}
   - component: {fileID: 5410464198350486789}
   - component: {fileID: -324040459885070527}
+  - component: {fileID: 9165272525180489240}
+  - component: {fileID: -2559340571841839162}
   m_Layer: 0
   m_Name: Sausage
   m_TagString: Untagged
@@ -161,3 +163,31 @@ PolygonCollider2D:
       - {x: 0.04725969, y: -0.2470007}
       - {x: 0.25899816, y: -0.01876545}
       - {x: 0.25, y: 0.25}
+--- !u!114 &9165272525180489240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064877211383215059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 30831f9077645d24da9a4e9483c5596e, type: 2}
+--- !u!114 &-2559340571841839162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064877211383215059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: 30831f9077645d24da9a4e9483c5596e, type: 2}
+  despawnDistance: 20

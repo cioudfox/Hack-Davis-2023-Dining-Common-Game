@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7945946339023518630}
   - component: {fileID: -5105139323719711133}
   - component: {fileID: 1035061441767553313}
+  - component: {fileID: -9123965937583661319}
+  - component: {fileID: -3675665809577756042}
   m_Layer: 0
   m_Name: CheeseCake
   m_TagString: Untagged
@@ -164,3 +166,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-9123965937583661319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289987134433117795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: a25fd4f238d2af14794c264574184da1, type: 2}
+--- !u!114 &-3675665809577756042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289987134433117795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: a25fd4f238d2af14794c264574184da1, type: 2}
+  despawnDistance: 20

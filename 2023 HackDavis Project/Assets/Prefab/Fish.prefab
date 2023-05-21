@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1738452623108730357}
   - component: {fileID: -2643047629033146710}
   - component: {fileID: 1827054927193014280}
+  - component: {fileID: -7486261289947024221}
+  - component: {fileID: -7395605877222814073}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -162,3 +164,31 @@ PolygonCollider2D:
       - {x: -0.09196472, y: -0.22450256}
       - {x: 0.12727356, y: 0.00048828125}
       - {x: 0.1482544, y: 0.23800659}
+--- !u!114 &-7486261289947024221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202414047041516650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: a93db0e55b0651748b520539457ede95, type: 2}
+--- !u!114 &-7395605877222814073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5202414047041516650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: a93db0e55b0651748b520539457ede95, type: 2}
+  despawnDistance: 20

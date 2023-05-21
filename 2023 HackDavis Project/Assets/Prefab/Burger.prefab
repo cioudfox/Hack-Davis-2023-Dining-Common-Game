@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5962610186573571938}
   - component: {fileID: 5706871678103582842}
   - component: {fileID: 6953346459737164661}
+  - component: {fileID: 1813421479588113670}
+  - component: {fileID: 8227125063898831315}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Untagged
@@ -145,3 +147,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
+--- !u!114 &1813421479588113670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8568180555809642908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: ebacf2da87e6d6e4a893d9ec04239a07, type: 2}
+--- !u!114 &8227125063898831315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8568180555809642908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: ebacf2da87e6d6e4a893d9ec04239a07, type: 2}
+  despawnDistance: 20

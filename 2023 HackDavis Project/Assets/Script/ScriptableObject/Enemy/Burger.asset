@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b57d6d26dc3540a6ceed7165c4595, type: 3}
   m_Name: Burger
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  damage: 0
-  speed: 0
-  maxHp: 0
+  prefab: {fileID: 8568180555809642908, guid: 26065df31e9e54d4ab16697aaad29b7b, type: 3}
+  damage: 2
+  speed: 1.5
+  maxHp: 40
   defence: 0

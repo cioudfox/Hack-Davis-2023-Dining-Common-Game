@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec3b57d6d26dc3540a6ceed7165c4595, type: 3}
-  m_Name: Potato
+  m_Name: Toast
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4234897410906476284, guid: 29570ac91aa4bc94e9821ad6e78c579e, type: 3}
-  damage: 1.5
+  prefab: {fileID: 4751191515807700974, guid: 353d17684d9703145a3ad531e608721b, type: 3}
+  damage: 2
   speed: 2
-  maxHp: 20
+  maxHp: 10
   defence: 0

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 816540035476895197}
   - component: {fileID: 306410685920690116}
   - component: {fileID: 2445063752394547728}
+  - component: {fileID: 203442898096393015}
+  - component: {fileID: -1166065298813513093}
   m_Layer: 0
   m_Name: Sirloin
   m_TagString: Untagged
@@ -182,3 +184,31 @@ RelativeJoint2D:
   m_AutoConfigureOffset: 1
   m_LinearOffset: {x: 1.4996102, y: 7.9415846}
   m_AngularOffset: 0
+--- !u!114 &203442898096393015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386471261550691450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 9cb3aede46d01be4db40f845fc2cf45a, type: 2}
+--- !u!114 &-1166065298813513093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386471261550691450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: 9cb3aede46d01be4db40f845fc2cf45a, type: 2}
+  despawnDistance: 20

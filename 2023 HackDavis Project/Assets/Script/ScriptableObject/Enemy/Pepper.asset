@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b57d6d26dc3540a6ceed7165c4595, type: 3}
   m_Name: Pepper
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  damage: 0
-  speed: 0
-  maxHp: 0
+  prefab: {fileID: 7975145348299274543, guid: 563d06e62585b80488d99dca141685b3, type: 3}
+  damage: 1
+  speed: 7
+  maxHp: 50
   defence: 0

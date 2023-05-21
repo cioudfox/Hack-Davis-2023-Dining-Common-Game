@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec3b57d6d26dc3540a6ceed7165c4595, type: 3}
-  m_Name: Potato
+  m_Name: Egg
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4234897410906476284, guid: 29570ac91aa4bc94e9821ad6e78c579e, type: 3}
-  damage: 1.5
+  prefab: {fileID: 6123647001160166239, guid: 5e7b4cda55e59944f9554b7622735ac4, type: 3}
+  damage: 2
   speed: 2
-  maxHp: 20
+  maxHp: 10
   defence: 0

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7749185670623387452}
   - component: {fileID: -6302465664482933757}
   - component: {fileID: 6498834000928759866}
+  - component: {fileID: -7057842728164921260}
+  - component: {fileID: -7225438353270358496}
   m_Layer: 0
   m_Name: Hotdog
   m_TagString: Untagged
@@ -161,3 +163,31 @@ PolygonCollider2D:
       - {x: 0.11900139, y: -0.19301224}
       - {x: 0.25, y: -0.10651684}
       - {x: 0.25, y: 0.049529076}
+--- !u!114 &-7057842728164921260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272060287521065658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d614236f86454d54c954953e994622ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 3dbd68e16c909534187b22513eabd301, type: 2}
+--- !u!114 &-7225438353270358496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272060287521065658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27debe7d0ef3d5d43899e641a1c966ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitData: {fileID: 11400000, guid: d866b08b7cc026d4d89045ff4a5e3a17, type: 2}
+  enemyData: {fileID: 11400000, guid: 3dbd68e16c909534187b22513eabd301, type: 2}
+  despawnDistance: 20
