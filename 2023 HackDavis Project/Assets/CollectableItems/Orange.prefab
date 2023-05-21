@@ -243,8 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e47ea9696c65b49bb309e2b1af95be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDropRange: 0.5
-  itemDropSpeed: 5
+  itemDropRange: 3
+  itemDropSpeed: 7
   itemLifetime: 10
   itemCollectSpeed: 10
   itemCollectRange: 3.5

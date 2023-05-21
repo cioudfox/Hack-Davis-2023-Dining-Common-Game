@@ -65,31 +65,31 @@ public class InventoryController : MonoBehaviour
                 switch (item.itemType)
                 {
                     case Item.ItemType.Sushi:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("Sushi: Consume it to restore HP.");
                         break;
                     case Item.ItemType.Veges:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("Veges: Consume it to increase critical hit chance.");
                         break;
                     case Item.ItemType.Meat:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("Meat: Consume it to increase movement speed and attack speed.");
                         break;
                     case Item.ItemType.Apple:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is an apple.");
                         break;
                     case Item.ItemType.Blueberry:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is a blueberry.");
                         break;
                     case Item.ItemType.Kiwi:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is a kiwi.");
                         break;
                     case Item.ItemType.Strawberry:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is a strawberry.");
                         break;
                     case Item.ItemType.Orange:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is an orange.");
                         break;
                     case Item.ItemType.Watermelon:
-                        infoDisplay.SetText("");
+                        infoDisplay.SetText("This is a watermelon");
                         break;
                 }
             }
