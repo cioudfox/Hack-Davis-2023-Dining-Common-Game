@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
             lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);    //While moving
         }
 
+        // Inventory is not open, left mouse click or right mouse click to change attack direction
         if (GameObject.FindGameObjectWithTag("Inventory") == null)
         {
             if (Input.GetMouseButtonDown(0))
@@ -113,6 +114,41 @@ public class PlayerController : MonoBehaviour
                 this.rightMouse.Execute(this.gameObject);
             }
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Keypad1) || (Input.GetKeyDown(KeyCode.Alpha1)))
+        {
+            // Debug.Log("Number 1 clicked");
+            // this.inventory.UseItem(this.inventory.GetItemList);
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Sushi)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad2) || (Input.GetKeyDown(KeyCode.Alpha2)))
+        {
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Veges)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3) || (Input.GetKeyDown(KeyCode.Alpha3)))
+        {
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Meat)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        
 
         if (Input.GetKeyDown(KeyCode.I))
         {
