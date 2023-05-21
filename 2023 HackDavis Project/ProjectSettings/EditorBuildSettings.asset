@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Today's Menu.unity
     guid: 52a286db6d73d924796da4889f8db4c5
+  - enabled: 1
+    path: Assets/Scenes/Segundo.unity
+    guid: e617937eb134d2d4ebf2db8200fa44f8
   m_configObjects: {}
