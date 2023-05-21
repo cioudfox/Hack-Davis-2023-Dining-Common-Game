@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4437020468298983244}
   - component: {fileID: 5566953518077298416}
   m_Layer: 0
-  m_Name: Swashbuckler_melee_hitbox
+  m_Name: melee_hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
