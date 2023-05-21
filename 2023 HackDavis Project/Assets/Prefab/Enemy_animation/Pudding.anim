@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fish
+  m_Name: Pudding
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1435946257, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: -816624881, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
     - time: 0.083333336
-      value: {fileID: -353293352, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: -1789262921, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
     - time: 0.16666667
-      value: {fileID: -1188401475, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: 2140888146, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
     - time: 0.25
-      value: {fileID: -1800794994, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: 243448137, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1435946257, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -353293352, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -1188401475, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -1800794994, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+    - {fileID: -816624881, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
+    - {fileID: -1789262921, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
+    - {fileID: 2140888146, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
+    - {fileID: 243448137, guid: d9c0d682b1cb84f4a8d30f7d6cf51121, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

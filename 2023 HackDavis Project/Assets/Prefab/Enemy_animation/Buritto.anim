@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fish
+  m_Name: Buritto
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1435946257, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: 765030130, guid: e1997a3ccca998645a1031979236df68, type: 3}
     - time: 0.083333336
-      value: {fileID: -353293352, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: 1662332877, guid: e1997a3ccca998645a1031979236df68, type: 3}
     - time: 0.16666667
-      value: {fileID: -1188401475, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: -85925029, guid: e1997a3ccca998645a1031979236df68, type: 3}
     - time: 0.25
-      value: {fileID: -1800794994, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+      value: {fileID: -68286075, guid: e1997a3ccca998645a1031979236df68, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1435946257, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -353293352, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -1188401475, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
-    - {fileID: -1800794994, guid: 958359a8f1e6c5c4fa592005b3b7f7d0, type: 3}
+    - {fileID: 765030130, guid: e1997a3ccca998645a1031979236df68, type: 3}
+    - {fileID: 1662332877, guid: e1997a3ccca998645a1031979236df68, type: 3}
+    - {fileID: -85925029, guid: e1997a3ccca998645a1031979236df68, type: 3}
+    - {fileID: -68286075, guid: e1997a3ccca998645a1031979236df68, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
