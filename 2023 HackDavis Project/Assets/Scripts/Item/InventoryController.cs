@@ -122,6 +122,18 @@ public class InventoryController : MonoBehaviour
 
             if (item.itemType == Item.ItemType.Sushi || item.itemType == Item.ItemType.Veges || item.itemType == Item.ItemType.Meat)
             {
+                if (item.itemType == Item.ItemType.Sushi)
+                {
+                    consumableRowX = 0.0f;
+                }
+                else if (item.itemType == Item.ItemType.Veges)
+                {
+                    consumableRowX = 1.0f;
+                }
+                else if (item.itemType == Item.ItemType.Meat)
+                {
+                    consumableRowX = 2.0f;
+                }
                 slotRectTransform.anchoredPosition = new Vector2(consumableRowX * slotCellSize, -consumableRowY * slotCellSize);
 
                 Image image = slotRectTransform.Find("Image").GetComponent<Image>();
@@ -132,11 +144,11 @@ public class InventoryController : MonoBehaviour
                 uiText.SetText(item.amount.ToString());
 
                 consumableRowX++;
-                if (consumableRowX >= 3) 
-                { 
-                    consumableRowX = 0;
-                    consumableRowY++;
-                }
+                // if (consumableRowX >= 3) 
+                // { 
+                //     consumableRowX = 0;
+                //     consumableRowY++;
+                // }
             }
             else
             {

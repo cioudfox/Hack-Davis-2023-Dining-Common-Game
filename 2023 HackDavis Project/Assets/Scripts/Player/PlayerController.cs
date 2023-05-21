@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
             lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);    //While moving
         }
 
+        // Inventory is not open, left mouse click or right mouse click to change attack direction
         if (GameObject.FindGameObjectWithTag("Inventory") == null)
         {
             if (Input.GetMouseButtonDown(0))
@@ -113,6 +114,41 @@ public class PlayerController : MonoBehaviour
                 this.rightMouse.Execute(this.gameObject);
             }
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Keypad1) || (Input.GetKeyDown(KeyCode.Alpha1)))
+        {
+            // Debug.Log("Number 1 clicked");
+            // this.inventory.UseItem(this.inventory.GetItemList);
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Sushi)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad2) || (Input.GetKeyDown(KeyCode.Alpha2)))
+        {
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Veges)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3) || (Input.GetKeyDown(KeyCode.Alpha3)))
+        {
+            foreach (Item item in this.inventory.GetItemList())
+            {
+                if (item.itemType == Item.ItemType.Meat)
+                {
+                    inventory.UseItem(item);
+                }
+            }
+        }
+        
 
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -232,5 +268,53 @@ public class PlayerController : MonoBehaviour
         renderer.material.color = flashColor;
         yield return new WaitForSeconds(flashDuration);
         renderer.material.color = originalColor;
+    }
+
+    public int GetScore()
+    {
+        Debug.Log("Called?");
+        int score = 0000;
+        var list = this.inventory.GetItemList();
+        // Item itemClass = GetComponent<Item>();
+        Debug.Log("Called2");
+
+        foreach (var item in list)
+        {
+            var type = item.itemType;
+
+            if (type == Item.ItemType.Apple)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Blueberry)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Kiwi)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Orange)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Strawberry)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+            if (type == Item.ItemType.Watermelon)
+            {
+                Debug.Log("Gem :" + item.amount);
+                score += 10 * item.amount;
+            }
+        }
+        Debug.Log("Called?3");
+
+        return score;
     }
 }
