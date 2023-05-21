@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Egg
   m_EditorClassIdentifier: 
   prefab: {fileID: 6123647001160166239, guid: 5e7b4cda55e59944f9554b7622735ac4, type: 3}
-  damage: 2
-  speed: 2
+  damage: 4
+  speed: 6
   maxHp: 10
   defence: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Burger
   m_EditorClassIdentifier: 
   prefab: {fileID: 8568180555809642908, guid: 26065df31e9e54d4ab16697aaad29b7b, type: 3}
-  damage: 2
+  damage: 4
   speed: 1.5
   maxHp: 40
   defence: 0

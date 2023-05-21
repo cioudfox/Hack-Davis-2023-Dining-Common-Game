@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cookie
   m_EditorClassIdentifier: 
   prefab: {fileID: 1199844483004798018, guid: 1905e1f705786c5459f1cfa1e3af2734, type: 3}
-  damage: 3
-  speed: 3
+  damage: 15
+  speed: 4
   maxHp: 15
   defence: 0

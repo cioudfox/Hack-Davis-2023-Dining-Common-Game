@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Potato
   m_EditorClassIdentifier: 
   prefab: {fileID: 4234897410906476284, guid: 29570ac91aa4bc94e9821ad6e78c579e, type: 3}
-  damage: 1.5
-  speed: 2
+  damage: 3
+  speed: 4
   maxHp: 20
   defence: 0

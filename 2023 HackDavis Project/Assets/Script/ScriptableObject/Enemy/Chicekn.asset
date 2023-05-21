@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chicekn
   m_EditorClassIdentifier: 
   prefab: {fileID: 6093314083905489051, guid: 849f3e736ba026e4ea90bca6f719cd2a, type: 3}
-  damage: 4
-  speed: 1
+  damage: 20
+  speed: 6
   maxHp: 30
   defence: 0
