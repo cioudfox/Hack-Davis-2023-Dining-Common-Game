@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a43e0466ad5f34ba8220935607573a, type: 3}
+  m_Name: Dagger
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3432851166608940634, guid: 43ec8bc5b14e02848bab4ebfe403ce49, type: 3}
+  damage: 3
+  speed: 10
+  cooldownDuration: 0.7
+  pierce: 2
+  lifetime: 1
