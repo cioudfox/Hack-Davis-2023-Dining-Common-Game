@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Buritto
   m_EditorClassIdentifier: 
   prefab: {fileID: 5729511549430290933, guid: 19350106438186c4ca270056f0e56a3c, type: 3}
-  damage: 20
+  damage: 5
   speed: 2.5
   maxHp: 25
   defence: 0
